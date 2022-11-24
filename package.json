@@ -8,6 +8,6 @@
     "papaparse": "^5.3.2"
   },
   "scripts": {
-    "dev": "node main.js"
+    "start": "node main.js"
   }
 }
