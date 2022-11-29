@@ -10,6 +10,7 @@
     <style>
         .table {
             border-collapse: collapse;
+            width: 100%;
         }
 
 
@@ -18,20 +19,21 @@
             padding: 4px;
         }
 
-        .table thead tr{
+        .table thead tr {
             background-color: rgb(0, 79, 148);
             color: white;
-        
+
         }
-        .table thead tr th{
+
+        .table thead tr th {
             border-left-color: rgb(0, 79, 148);
         }
 
-        .word-c{
+        .word-c {
             color: white;
         }
 
-        .word-c:hover{
+        .word-c:hover {
             color: black;
         }
     </style>
@@ -47,6 +49,8 @@
                     <th>mean_cn</th>
                     <th>sentence</th>
                     <th>sentence_trans</th>
+                    <th style="vertical-align:middle"><img style="height: 15px;margin-right: 5px;cursor: pointer;" @click="randomArr"
+                            src="./random.svg" alt=""></th>
                 </tr>
             </thead>
             <tbody>
@@ -69,6 +73,22 @@
         el: '#app',
         data: {
             list
+        },
+        methods: {
+            randomArr() {
+                this.list = this.shuffle(this.list)
+                this.$forceUpdate()
+            },
+            shuffle(array) {
+                var j, x, i;
+                for (i = array.length; i; i--) {
+                    j = Math.floor(Math.random() * i);
+                    x = array[i - 1];
+                    array[i - 1] = array[j];
+                    array[j] = x;
+                }
+                return array;
+            }
         }
     })
 </script>
