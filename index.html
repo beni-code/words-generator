@@ -9,12 +9,12 @@
 
     <style>
         .table {
-            border-collapse: collapse;
+            /* border-collapse: collapse; */
         }
 
 
         .table td {
-            border: 1px solid rgb(169, 181, 206);
+            /* border: 1px solid rgb(169, 181, 206); */
             padding: 4px;
         }
 
@@ -38,16 +38,20 @@
         <table class="table">
             <thead>
                 <tr>
-                    <td>e</td>
-                    <td>c</td>
-                    <td>fy</td>
+                    <td>word</td>
+                    <td>accent</td>
+                    <td>mean_cn</td>
+                    <td>sentence</td>
+                    <td>sentence_trans</td>
                 </tr>
             </thead>
             <tbody>
                 <tr v-for="item in list">
-                    <td>{{item.e}}</td>
-                    <td class="word-c">{{item.c}}</td>
-                    <td>{{item.fy}}</td>
+                    <td>{{item.word}}</td>
+                    <td>{{item.accent}}</td>
+                    <td class="word-c">{{item.mean_cn}}</td>
+                    <td>{{item.sentence}}</td>
+                    <td>{{item.sentence_trans}}</td>
                 </tr>
             </tbody>
         </table>
