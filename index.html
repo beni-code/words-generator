@@ -9,7 +9,7 @@
 
     <style>
         .table {
-            /* border-collapse: collapse; */
+            border-collapse: collapse;
         }
 
 
@@ -18,9 +18,13 @@
             padding: 4px;
         }
 
-        .table thead tr {
+        .table thead tr{
             background-color: rgb(0, 79, 148);
             color: white;
+        
+        }
+        .table thead tr th{
+            border-left-color: rgb(0, 79, 148);
         }
 
         .word-c{
@@ -38,11 +42,11 @@
         <table class="table">
             <thead>
                 <tr>
-                    <td>word</td>
-                    <td>accent</td>
-                    <td>mean_cn</td>
-                    <td>sentence</td>
-                    <td>sentence_trans</td>
+                    <th>word</th>
+                    <th>accent</th>
+                    <th>mean_cn</th>
+                    <th>sentence</th>
+                    <th>sentence_trans</th>
                 </tr>
             </thead>
             <tbody>
