@@ -1,0 +1,1 @@
+let list = [{"word":"invent","accent":"/ɪnˈvent/","mean_cn":"vt.发明","sentence":"He invented a special pair of shoes which allowed people to walk on water.","sentence_trans":"他发明了一双特殊的鞋子，人们可以穿着它在水上行走。"}]
