@@ -2,6 +2,7 @@ const fs = require('fs')
 const parseCsv = require('./parseCsv')
 
 fs.copyFileSync("./index.html", './dist/index.html')
+fs.copyFileSync("./convertor.html", './dist/convertor.html')
 fs.copyFileSync("./vue.js", './dist/vue.js')
 
 parseCsv().then(res => {
